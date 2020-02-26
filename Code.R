@@ -114,4 +114,12 @@ Final_Data$Q6[Final_Data$Q6 == "Western Washington University"]               <-
 Final_Data$Q6[Final_Data$Q6 == "Whitman College"]                             <- "WC"
 Final_Data$Q6[Final_Data$Q6 == "Yale University"]                             <- "YU"
 
-
+# Replace non-school answers to Q6 with NA
+Final_Data$Q6[Final_Data$Q6 == "N/A"]                                         <- NA
+Final_Data$Q6[Final_Data$Q6 == "n/a"]                                         <- NA
+Final_Data$Q6[Final_Data$Q6 == "N/a"]                                         <- NA
+Final_Data$Q6[Final_Data$Q6 == "Na"]                                          <- NA
+Final_Data$Q6[Final_Data$Q6 == "NA"]                                          <- NA
+Final_Data$Q6[Final_Data$Q6 == "no"]                                          <- NA
+Final_Data$Q6[Final_Data$Q6 == "none"]                                        <- NA
+Final_Data$Q6[Final_Data$Q6 == "prefer not to answer"]                        <- NA
